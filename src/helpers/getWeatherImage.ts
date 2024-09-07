@@ -329,7 +329,6 @@ const items: Record<WeatherCode, WeatherImage> = {
  * @returns A "day" image representation of the WMO weather code
  */
 function getWeatherImage(weatherCode: string): { description: string; image: string } {
-    console.log('weatherCode', weatherCode)
     if (items.hasOwnProperty(weatherCode)) {
         return items[weatherCode as WeatherCode].day; // Assuming daytime
     } else {
